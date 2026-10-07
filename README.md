@@ -42,3 +42,29 @@ npm start
 ```
 
 Se abre en http://localhost:3000
+
+---
+
+# TPN°8 React - Subir la aplicación React a nuestro hosting
+
+## Enunciado
+
+Tomar en cuenta la página:
+https://www.tutorialesprogramacionya.com/reactya/detalleconcepto.php?punto=17&codigo=17&inicio=0
+
+Subir el trabajo práctico N°7 a un hosting a elección:
+https://blog.back4app.com/es/los-10-mejores-proveedores-de-alojamiento-gratuito-para-su-aplicacion-react/
+
+Presentar el link en GitHub.
+
+## Hosting elegido: GitHub Pages
+
+**Link de la aplicación publicada:** https://ifran-ignacio.github.io/tp7-react-useeffect-mui/
+
+Cómo se publicó:
+
+1. Como el sitio queda en una subcarpeta (`/tp7-react-useeffect-mui/`), la aplicación se compila indicando esa ruta
+   con la variable `PUBLIC_URL` (en el tutorial se hace con la propiedad `homepage` de `package.json`).
+2. El archivo `.github/workflows/deploy.yml` hace el trabajo automáticamente en cada cambio de la rama `main`:
+   `npm ci` → `npm run build` → publica el contenido de la carpeta `build`.
+3. En el repositorio: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
